@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>org.exoplatform.commons</groupId>
+    <version>1.0.0-SNAPSHOT</version>
+    <artifactId>exo-sanitization-api</artifactId>
+
+    <packaging>jar</packaging>
+
+    <name>eXo Helper package</name>
+
+    <description>Creating a cross-site scripting filter that allows user-submitted HTML/CSS to pass through, but does not allow malicious content through (usually coded in JavaScript). I decided to use AntiSamy which lends its name from the well known MySpace worm and which comes in handy when trying to mitigate Cross-site Scripting attacks. Whereby XSS is sometimes hard to mitigate when business is asking for HTML formatting in user supplied inputs. At that point, AntiSamy might become handy since it focuses to strip down user supplied input to a predefined set of allowed formatting (HTML tags and attributes).Personally I think this is a fantastic project and something that could really take off usage wise - especially if versions are ported beyond Java to .Net and PHP. A lot of developers, who are aware of the dangers of XSS, are building more and more web applications that expect to take in dynamic user-supplied content (Web 2.0). This will give them an easy option to do so safely and securely.</description>
+
+
+    <dependencies>
+        <dependency>
+            <groupId>org.owasp.antisamy</groupId>
+            <artifactId>antisamy</artifactId>
+            <version>1.5.3</version>
+        </dependency>
+        <dependency>
+            <groupId>org.exoplatform.kernel</groupId>
+            <artifactId>exo.kernel.commons</artifactId>
+            <version>2.6.x-SNAPSHOT</version>
+        </dependency>
+    </dependencies>
+
+</project>
