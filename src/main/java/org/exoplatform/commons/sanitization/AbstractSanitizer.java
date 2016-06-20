@@ -38,4 +38,8 @@ public abstract class AbstractSanitizer {
         Policy policy = Policy.getInstance(Policy.class.getResourceAsStream("/META-INF/antisamy/" + name + ".xml"));
         return policy;
     }
+
+    private static void merge (String branch) throws Exception {
+        System.out.println(" branch name "+branch);
+    }
 }
