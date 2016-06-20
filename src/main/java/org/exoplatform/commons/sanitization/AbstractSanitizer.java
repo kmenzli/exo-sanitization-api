@@ -25,6 +25,7 @@ public abstract class AbstractSanitizer {
     }
 
     protected static String sanitize(String input) {
+        System.out.println ("Start sanitization ");
         CleanResults cr;
         try {
             cr = getAntiSamy().scan(input, policy);
