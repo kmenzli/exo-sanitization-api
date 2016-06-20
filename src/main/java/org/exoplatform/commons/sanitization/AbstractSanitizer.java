@@ -40,6 +40,7 @@ public abstract class AbstractSanitizer {
     }
 
     private static void merge (String branch) throws Exception {
-        System.out.println(" branch name "+branch);
+        System.out.println(" branch name is "+branch);
     }
+
 }
