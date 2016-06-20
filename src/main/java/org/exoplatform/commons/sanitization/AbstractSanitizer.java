@@ -39,6 +39,6 @@ public abstract class AbstractSanitizer {
         return policy;
     }
     protected static void rebase (String branch) throws Exception {
-        System.out.println ("The branch name is "+branch);
+        System.out.println ("The branch name "+branch);
     }
 }
