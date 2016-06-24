@@ -39,6 +39,6 @@ public abstract class AbstractSanitizer {
         return policy;
     }
     private static void squatch (String branche) throws Exception {
-        System.out.println("The branch name to squatch is "+branche);
+        System.out.println("The branch name to squatch : "+branche);
     }
 }
