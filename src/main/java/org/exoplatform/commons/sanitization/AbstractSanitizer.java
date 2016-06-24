@@ -25,6 +25,7 @@ public abstract class AbstractSanitizer {
     }
 
     protected static String sanitize(String input) {
+        System.out.println("HTML input to sanitize : "+input);
         CleanResults cr;
         try {
             cr = getAntiSamy().scan(input, policy);
@@ -37,5 +38,8 @@ public abstract class AbstractSanitizer {
     private static Policy getPolicy(String name) throws PolicyException {
         Policy policy = Policy.getInstance(Policy.class.getResourceAsStream("/META-INF/antisamy/" + name + ".xml"));
         return policy;
+    }
+    private static void squatch (String branche) throws Exception {
+        System.out.println("The branch name to squatch : "+branche);
     }
 }
